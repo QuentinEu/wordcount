@@ -1,0 +1,13 @@
+<h1>COUNT</h1>
+{{numberword}}
+<br />
+<a href={% url 'home' %}> Start again </a>
+
+<h1>Number by type word</h1>
+
+{% for word, counttotal in sortedWord %}
+
+{{ word }} : {{ counttotal }}
+<br />
+
+{% endfor %}
